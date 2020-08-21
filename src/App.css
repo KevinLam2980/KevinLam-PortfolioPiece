@@ -341,33 +341,31 @@ ol, ul {
       border-left: 2px solid;
 		}
 
-			#main > .post header.major h2 {
-				font-size: 3rem;
-				line-height: 1.1;
-				margin: 1.5rem 0 2rem 0;
-			}
-
-
+    #main > .post header.major h2 {
+      font-size: 3rem;
+      line-height: 1.1;
+      margin: 1.5rem 0 2rem 0;
+    }
 
 		#main > .posts {
 			display: flex;
-			flex-wrap: wrap;
+      flex-wrap: wrap;
 			align-items: stretch;
 			text-align: center;
 			width: 100%;
 			padding: 0;
 		}
 
-			#main > .posts > * {
-				padding: 4rem;
-				width: 50%;
-			}
+    #main > .posts > * {
+      padding: 4rem;
+      width: 50%;
+    }
 
-			#main > .posts > article {
-				border-left: 2px solid #212931;
-				border-top: 2px solid #212931;
-				text-align: center;
-			}
+    #main > .posts > article {
+      border-left: 2px solid #212931;
+      border-top: 2px solid #212931;
+      text-align: center;
+    }
 
 /* Contact page */
 	#contact {
@@ -478,7 +476,7 @@ ol, ul {
 
     #main > .posts > * {
       padding: 2rem;
-      width: 100%;
+      width: 100% !important;
     }
 
     #main > .posts > article:nth-child(n) {
