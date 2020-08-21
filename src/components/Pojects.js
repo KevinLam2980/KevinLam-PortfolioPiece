@@ -32,7 +32,7 @@ const Projects = props => {
                 </article>  
                 <article>
                     <header>
-                        <span className="date">August 12, 2020</span>
+                        <span className="date">June 26, 2020</span>
                         <h2>Spotify Suggester Landing Page</h2>
                     </header>
                     <img className="image-fit" src={require('../assets/images/spotify-suggester.png')} alt="Project screenshot" />
@@ -41,12 +41,12 @@ const Projects = props => {
                 </article>  
                 <article>
                     <header>
-                        <span className="date">August 12, 2020</span>
-                        <h2>Placeholder for a future project</h2>
+                        <span className="date">August 10, 2020</span>
+                        <h2>Reducer Todo</h2>
                     </header>
-                    <img className="image-fit" src={require('../assets/images/spotify-suggester.png')} alt="Project screenshot" />
-                    <p>placeholder</p>
-                    <a href="#" target="_blank" className="button">View Project</a>
+                    <img className="image-fit" src={require('../assets/images/reducer-todo.png')} alt="Project screenshot" />
+                    <p>A simple and minimalistic todo application created with the use of react and reducer functions</p>
+                    <a href="https://reducer-todo-8oft0equ5.vercel.app/" target="_blank" className="button">View Project</a>
                 </article>  
             </section>
 
