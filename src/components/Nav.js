@@ -4,11 +4,12 @@ import {NavLink} from 'react-router-dom'
 
 const NavBar = props => {
 
+
     return (
         <nav id="nav">
         <ul className="links">
-            <NavLink to='/projects' index={true} activeClassName="active">
-                <li >Projects</li>
+            <NavLink to='/projects' activeClassName="active">
+                <li>Projects</li>
             </NavLink>
             <NavLink to='/skills' activeClassName="active">
                 <li >Skills</li>
