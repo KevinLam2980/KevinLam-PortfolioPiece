@@ -5,19 +5,21 @@ import Styled from 'styled-components'
 const SuccessMessage = Styled.p`
     transition: 0.3s ease-in-out;
     margin: 0 auto 1rem auto;
-    width: 75%;
+    width: 85%;
     text-align: center;
     color: #212931;
     background-color: #23ba3a;
+    padding: 0.75rem;
 `
 
 const FailMessage = Styled.p`
     transition: 0.3s ease-in-out;
     margin: 0 auto 1rem auto;
-    width: 75%;
+    width: 85%;
     text-align: center;
     color: #212931;
     background-color: #a31010;
+    padding: 0.75rem;
 `
 
 let initialFormValues = {
@@ -95,27 +97,30 @@ const Contact = props => {
                         ></textarea>
                     </div>
                 </div>
-                    <input className="button"type="submit" value="Send" />
+                    <input 
+                    className="button"
+                    type="submit" 
+                    value="Send" />
             </form>
         </section>
-{/* 
+
         <section class="split contact">
             <section>
                 <h3>Phone</h3>
-                <p><a href="#">(000) 000-0000</a></p>
+                <p className="contactInfo">(408) 532-3643</p>
             </section>
             <section>
                 <h3>Email</h3>
-                <p><a href="#">kev2980@gmail.com</a></p>
+                <p className="contactInfo">kev2980@gmail.com</p>
             </section>
             <section>
                 <h3>Social</h3>
                 <ul class="icons alt">
-                    <li><a href="https://www.linkedin.com/in/kevin-lam-8729281a3/" class="icon brands alt fa-instagram"><span class="label">Linkedin</span></a></li>
-                    <li><a href="https://github.com/KevinLam2980" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+                    <li><a href="https://www.linkedin.com/in/kevin-lam-8729281a3/"><span class="label">Linkedin</span></a></li>
+                    <li><a href="https://github.com/KevinLam2980"><span class="label">GitHub</span></a></li>
                 </ul>
             </section>
-        </section> */}
+        </section>
     </div> 
     )
 }
