@@ -21,7 +21,7 @@ const Projects = props => {
                         <h2>Cocktails Recipes</h2>
                     </header>
                     <img className="image-fit" src={require('../assets/images/cocktails-screenshot.png')} alt="Project screenshot" />
-                    <p>A react application that pulls data from an api to provide a simple access portal for searching up popular cocktail recipes.</p>
+                    <p>A front end react application that allows users to search up recipes for popular alcoholic drinks..</p>
                     <a href="https://cocktails-kevthedev.vercel.app/" target="_blank"  className="button" rel="noopener noreferrer">View Project</a>
                 </article>   
 
@@ -31,7 +31,7 @@ const Projects = props => {
                         <h2>Secret Family Recipes</h2>
                     </header>
                     <img className="image-fit" src={require('../assets/images/secret-recipe.png')} alt="Project screenshot" />
-                    <p>React application with full CRUD capabilites for allowing users to add, edit, and delete their most valuable family recipes.</p>
+                    <p>React application with full CRUD capabilites, allowing users to add, edit, and delete their own cooking recipes.</p>
                     <a href="https://bw-secret-family-recipe-frontend.vercel.app/" target="_blank" className="button" rel="noopener noreferrer">View Project</a>
                 </article>  
                 <article>
@@ -53,7 +53,6 @@ const Projects = props => {
                     <a href="https://reducer-todo-8oft0equ5.vercel.app/" target="_blank" className="button" rel="noopener noreferrer">View Project</a>
                 </article>  
             </section>
-
 </div>
 
     )
