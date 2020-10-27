@@ -16,8 +16,8 @@ const Header = props => {
         <section id="intro">
             <h1>Kevin Lam</h1>
             <h2>Web Developer</h2>
-            <p>Full Stack developer specializing in Javascript, React, and Redux</p>
-                <a href="#nav" className="button icon circle actions">scroll</a>
+            <p>Full Stack developer specializing in Javascript, React, Redux, and Java Spring</p>
+                <a href="#nav" className="button icon circle actions" id="scrollerBTN">scroll</a>
          </section>
     )
 }
