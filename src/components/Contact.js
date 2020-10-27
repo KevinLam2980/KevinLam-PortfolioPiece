@@ -3,7 +3,7 @@ import emailjs from 'emailjs-com'
 import Styled from 'styled-components'
 
 const SuccessMessage = Styled.p`
-    transition: 0.3s ease-in-out;
+    transition: 0.4s ease-in-out;
     margin: 0 auto 1rem auto;
     width: 85%;
     text-align: center;
@@ -13,7 +13,7 @@ const SuccessMessage = Styled.p`
 `
 
 const FailMessage = Styled.p`
-    transition: 0.3s ease-in-out;
+    transition: 0.4s ease-in-out;
     margin: 0 auto 1rem auto;
     width: 85%;
     text-align: center;
