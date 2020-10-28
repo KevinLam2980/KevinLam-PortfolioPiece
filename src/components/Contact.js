@@ -3,13 +3,18 @@ import emailjs from 'emailjs-com'
 import Styled from 'styled-components'
 
 const SuccessMessage = Styled.p`
-    transition: 0.4s ease-in-out;
+    /* transition: 0.4s ease-in-out;
+    transform: scaleY(1); */
     margin: 0 auto 1rem auto;
     width: 85%;
     text-align: center;
     color: #212931;
     background-color: #23ba3a;
     padding: 0.75rem;
+    z-index: 5;
+    position: absolute;
+    top: 0;
+    box-shadow: 0px 1px 10px black;
 `
 
 const FailMessage = Styled.p`
@@ -20,6 +25,10 @@ const FailMessage = Styled.p`
     color: #212931;
     background-color: #a31010;
     padding: 0.75rem;
+    z-index: 5;
+    position: absolute;
+    top: 0;
+    box-shadow: 0px 1px 10px black;
 `
 
 let initialFormValues = {
@@ -33,9 +42,9 @@ const Contact = props => {
     const [emailError, setEmailError] = useState(false)
     const [emailFormValues, setEmailFormValues] = useState(initialFormValues)
 
-    useEffect(() => {
-        document.getElementById("scrollerBTN").click()
-      }, [])
+    // useEffect(() => {
+    //     document.getElementById("scrollerBTN").click()
+    //   }, [])
 
     function onHandleChange(e){
         setEmailFormValues({... emailFormValues, [e.target.name]: e.target.value})
