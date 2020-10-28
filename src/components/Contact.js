@@ -33,9 +33,9 @@ const Contact = props => {
     const [emailError, setEmailError] = useState(false)
     const [emailFormValues, setEmailFormValues] = useState(initialFormValues)
 
-    useEffect(() => {
-        document.getElementById("scrollerBTN").click()
-      }, [])
+    // useEffect(() => {
+    //     document.getElementById("scrollerBTN").click()
+    //   }, [])
 
     function onHandleChange(e){
         setEmailFormValues({... emailFormValues, [e.target.name]: e.target.value})

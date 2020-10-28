@@ -3,6 +3,7 @@ import {NavLink} from 'react-router-dom'
 import {library} from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { NavHashLink } from 'react-router-hash-link'
 
 library.add(fab)
 
@@ -12,21 +13,21 @@ const NavBar = props => {
     return (
         <nav id="nav">
         <ul className="links">
-            <NavLink to='/projects' activeClassName="active">
+            <NavHashLink smooth to='/projects#nav' activeClassName="active">
                 <li>Projects</li>
-            </NavLink>
-            <NavLink to='/skills' activeClassName="active">
+            </NavHashLink>
+            <NavHashLink smooth to='/skills#nav' activeClassName="active">
                 <li >Skills</li>
-            </NavLink>
-            {/* <NavLink to='/about' activeClassName="active">
+            </NavHashLink>
+            {/* <NavHashLink smooth to='/about#nav' activeClassName="active">
                 <li >About Me</li>
-            </NavLink> */}
-            <NavLink to='/contact' activeClassName="active">
+            </NavHashLink> */}
+            <NavHashLink smooth to='/contact#nav' activeClassName="active">
                 <li>Contact</li>    
-            </NavLink>
-            {/* <NavLink to='/blog' activeClassName="active">
+            </NavHashLink>
+            {/* <NavHashLink smooth to='/blog#nav' activeClassName="active">
                 <li>Blog</li>    
-            </NavLink> */}
+            </NavHashLink> */}
        
         </ul>
         <div>

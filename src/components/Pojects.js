@@ -3,9 +3,9 @@ import FadeInSection from './FadeInSection'
 
 const Projects = props => {
 
-    useEffect(() => {
-        document.getElementById("scrollerBTN").click()
-      }, [])
+    // useEffect(() => {
+    //     document.getElementById("scrollerBTN").click()
+    //   }, [])
 
     return (
         <div id="main">
