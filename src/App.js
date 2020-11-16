@@ -7,6 +7,7 @@ import NavBar from './components/Nav'
 import Projects from './components/Pojects'
 import Footer from './components/Footer'
 import Contact from './components/Contact'
+import Skills from './components/Skills'
 
 function App() {
   const history = useHistory()
@@ -25,6 +26,9 @@ function App() {
             </Route>
             <Route exact path='/contact'>
                 <Contact/>
+            </Route>
+            <Route exact path="/skills">
+                <Skills/>
             </Route>
           </Switch>
 		    	<Footer/>
