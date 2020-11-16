@@ -44,6 +44,11 @@ const Skills = () => {
                         <img className="featuredSkillIcon" src={require("../assets/images/SkillsImages/Postgresql_elephant.svg")} alt="PostgreSQL"/>
                         <img className="featuredSkillIcon" src={require("../assets/images/SkillsImages/VSCode.png")} alt="VS Code"/>
                         <img className="featuredSkillIcon" src={require("../assets/images/SkillsImages/IntelliJ.png")} alt="IntilliJ"/>
+                        <img className="featuredSkillIcon" src={require("../assets/images/SkillsImages/Bootstrap.png")} alt="Bootstrap"/>
+                        <img className="featuredSkillIcon" src={require("../assets/images/SkillsImages/Postman.png")} alt="Postman"/>
+                        <img className="featuredSkillIcon" src={require("../assets/images/SkillsImages/Sass.png")} alt="Sass"/>
+                        <img className="featuredSkillIcon" src={require("../assets/images/SkillsImages/LESS.svg")} alt="Less"/>
+                        <img className="featuredSkillIcon" src={require("../assets/images/SkillsImages/Slack.png")} alt="Slack"/>
                     </div>
                     </div>
                 </header>
