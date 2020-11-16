@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react'
+import React, { useEffect } from 'react'
 import FadeInSection from './FadeInSection'
 
 const Projects = props => {
@@ -11,7 +11,7 @@ const Projects = props => {
         <div id="main">
             <article className="post">
                 <header className="major">
-                    <h2>Check out some of my projects</h2>
+                    <h2>Projects</h2>
                 </header>
             </article>
 
