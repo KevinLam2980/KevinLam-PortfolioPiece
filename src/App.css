@@ -527,10 +527,10 @@ body {
 	width: 100%;
 	padding: 0;
 }
-#nav div {
+/* #nav div {
 	display: none;
 	width: 0;
-}
+} */
 #nav ul {
 	width: 100%;
 	justify-content: space-around;
@@ -549,6 +549,13 @@ body {
 }
 #main .posts img.image-fit {
 	width: 100%;
+}
+}
+
+@media screen and (max-width: 500px) {
+#nav div {
+	display: none;
+	width: 0;
 }
 }
 
