@@ -4,6 +4,9 @@ import FadeInSection from './FadeInSection'
 
 
 const SkillsDiv = Styled.div`
+.featuredSkillsContainer, .additionalSkillsContainer {
+    margin-top: 2rem;
+}
 .featuredSkillIcon {
 width: 100px;
 height: 100px;

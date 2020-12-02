@@ -227,7 +227,7 @@ header > p {
 }
 
 header.major {
-	margin: 0 0 4rem 0;
+	/* margin: 0 0 4rem 0; */
 	text-align: center;
 }
 
@@ -387,10 +387,16 @@ padding: 0 2rem;
 	border-left: 2px solid;
 }
 
+#main > .post header.major {
+	display: flex;
+	align-items: center;
+}
+
 #main > .post header.major h2 {
-	font-size: 3rem;
+	font-size: 2.5rem;
 	line-height: 1.1;
-	margin: 1.5rem 0 2rem 0;
+	/* margin: 1.5rem 0 2rem 0; */
+	margin: 0 auto;
 }
 
 #main > .posts {
@@ -411,6 +417,10 @@ padding: 0 2rem;
 	border-left: 2px solid #212931;
 	border-top: 2px solid #212931;
 	text-align: center;
+}
+
+.project-label {
+	align-self: center;
 }
 
 /* Contact page */
@@ -601,9 +611,9 @@ body {
 
 @media screen and (max-width: 980px) {
 
-#contact {
-	display: block;
-}
+	#contact {
+		display: block;
+	}
 
 	#contact > section {
 	border-top: solid 2px #212931;
@@ -627,6 +637,9 @@ body {
 
 	#container {
 	background-size: cover;
+	}
+	#main > .post header.major {
+		display: block;
 	}
 }
 

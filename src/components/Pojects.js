@@ -11,7 +11,7 @@ const Projects = props => {
         <div id="main">
             <article className="post">
                 <header className="major">
-                    <h2>Projects</h2>
+                    <h2 id="project-label">Projects</h2>
                 </header>
             </article>
 
