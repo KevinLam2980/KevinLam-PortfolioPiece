@@ -18,7 +18,7 @@ const Project = props => {
             <p>{city.description}</p>
             </FadeInSection>
             <FadeInSection>
-            <a href="city.projectLink" target="_blank"  className="button" rel="noopener noreferrer">View Project</a>
+            <a href={city.projectLink} target="_blank"  className="button" rel="noopener noreferrer">View Project</a>
           </FadeInSection>
     </article> 
     )

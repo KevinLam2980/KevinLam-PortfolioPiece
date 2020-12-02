@@ -4,7 +4,7 @@ const listOfProjects = [
         title: "Citrics",
         img: 'citrics',
         description: "Full stack informational website used to compare different cities within the United States. Users can view data stats of cities such as; population, weather, prevalent career tracks, and more.",
-        projectLink: "https://cocktails-kevthedev.vercel.app/",
+        projectLink: "",
         githubLink: ""
     },
     {

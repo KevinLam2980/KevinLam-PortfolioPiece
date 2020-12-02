@@ -36,13 +36,6 @@ const Skills = () => {
                                 return <Skill skill={skill}/> 
                             })
                         }
-                        {/* <img className="featuredSkillIcon" src={require("../assets/images/SkillsImages/HTML.png")} alt="HTML"/>
-                        <img className="featuredSkillIcon" src={require("../assets/images/SkillsImages/CSS.png")} alt="CSS"/>
-                        <img className="featuredSkillIcon" src={require("../assets/images/SkillsImages/logo-javascript.svg")} alt="Javscript"/>
-                        <img className="featuredSkillIcon" src={require("../assets/images/SkillsImages/react.webp")} alt="React"/>
-                        <img className="featuredSkillIcon" src={require("../assets/images/SkillsImages/Java.png")} alt="Java"/>
-                        <img className="featuredSkillIcon" src={require("../assets/images/SkillsImages/Spring.png")} alt="Java Spring"/>
-                        <img className="featuredSkillIcon" src={require("../assets/images/SkillsImages/Redux.png")} alt="Redux"/> */}
                     </div>
                     </FadeInSection>
                 </header>

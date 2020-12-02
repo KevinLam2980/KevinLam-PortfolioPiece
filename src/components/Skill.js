@@ -1,7 +1,6 @@
 import React from 'react'
 import Styled from 'styled-components'
 
-
 const SkillDiv = Styled.div`
 display: inline-block;
 .skillLabel {
@@ -22,14 +21,6 @@ margin: 1.5rem;
     transform: scale(1.1);
     transition: 0.75s;
 }
-
-/* @media screen and (max-width: 520px) {
-	.featuredSkillIcon {
-	width: 75px;
-	height: 75px;
-	margin: 1.5rem;
-	}
-	} */
 `
 
 const Skill = props => {
