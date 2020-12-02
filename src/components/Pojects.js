@@ -20,16 +20,16 @@ const Projects = props => {
                 <article>    
                     <FadeInSection>
                         <header>
-                            <span className="date">August 12, 2020</span>
-                            <h2>Cocktails Recipes</h2>
+                            <span className="date">September 2020</span>
+                            <h2>Citrics</h2>
                         </header>
-                        <img className="image-fit" src={require('../assets/images/cocktails-screenshot.png')} alt="Project screenshot" />
+                        <img className="image-fit" src={require('../assets/images/citrics.png')} alt="Project screenshot" />
                         </FadeInSection>
                         <FadeInSection>
-                        <p>A front end react application that allows users to search up recipes for popular alcoholic drinks..</p>
+                        <p>Full stack informational website used to compare different cities within the United States. Users can view data stats of cities such as; population, weather, prevalent career tracks, and more.</p>
                         </FadeInSection>
                         <FadeInSection>
-                        <a href="https://cocktails-kevthedev.vercel.app/" target="_blank"  className="button" rel="noopener noreferrer">View Project</a>
+                        {/* <a href="https://cocktails-kevthedev.vercel.app/" target="_blank"  className="button" rel="noopener noreferrer">View Project</a> */}
                       </FadeInSection>
                 </article>   
              
@@ -54,12 +54,12 @@ const Projects = props => {
                     <FadeInSection>
                     <header>
                         <span className="date">June 26, 2020</span>
-                        <h2>Spotify Suggester Landing Page</h2>
+                        <h2>Spotify Suggester</h2>
                     </header>
                     <img className="image-fit" src={require('../assets/images/spotify-suggester.png')} alt="Project screenshot" />
                     </FadeInSection>
                     <FadeInSection>
-                    <p>A front end static marketing page for a private spotify suggester application.</p>
+                    <p>A song suggester application built to give users recomended songs based on the sound profiles, melody, and rythm of your favorite songs.</p>
                     </FadeInSection>
                     <FadeInSection>
                     <a href="https://spotify-suggester-melon.netlify.app/landing.html" target="_blank" className="button" rel="noopener noreferrer">View Project</a>
