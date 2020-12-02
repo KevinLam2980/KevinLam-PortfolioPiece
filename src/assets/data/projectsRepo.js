@@ -5,7 +5,7 @@ const listOfProjects = [
         img: 'citrics',
         description: "Full stack informational website used to compare different cities within the United States. Users can view data stats of cities such as; population, weather, prevalent career tracks, and more.",
         projectLink: "",
-        githubLink: ""
+        githubLink: "https://github.com/labs28-citrics-b"
     },
     {
         date: "July 24, 2020",
@@ -13,7 +13,7 @@ const listOfProjects = [
         img: 'secret-recipe',
         description: "React application with full CRUD capabilites, allowing users to add, edit, and delete their own cooking recipes.",
         projectLink: "https://bw-secret-family-recipe-frontend.vercel.app/",
-        githubLink: ""
+        githubLink: "https://github.com/secret-family-recipes-703"
     },
     {
         date: "June 26, 2020",
