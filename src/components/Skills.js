@@ -1,5 +1,7 @@
 import React from 'react'
 import Styled from 'styled-components'
+import FadeInSection from './FadeInSection'
+
 
 const SkillsDiv = Styled.div`
 .featuredSkillIcon {
@@ -20,6 +22,7 @@ const Skills = () => {
             <article className="post">
                 <header className="major">
                     <h2 className="skillsHeaders">Featured Skills</h2>
+                    <FadeInSection>
                     <div className="featuredSkillsContainer">
                         <img className="featuredSkillIcon" src={require("../assets/images/SkillsImages/HTML.png")} alt="HTML"/>
                         <img className="featuredSkillIcon" src={require("../assets/images/SkillsImages/CSS.png")} alt="CSS"/>
@@ -29,13 +32,14 @@ const Skills = () => {
                         <img className="featuredSkillIcon" src={require("../assets/images/SkillsImages/Spring.png")} alt="Java Spring"/>
                         <img className="featuredSkillIcon" src={require("../assets/images/SkillsImages/Redux.png")} alt="Redux"/>
                     </div>
+                    </FadeInSection>
                 </header>
             </article>
             <article className="post">
                 <header className="major">
                     <h2 className="skillsHeaders">Additional Skills</h2>
+                    <FadeInSection>
                     <div className="additionalSkillsContainer">
-                    <div className="featuredSkillsContainer">
                         <img className="featuredSkillIcon" src={require("../assets/images/SkillsImages/Python.png")} alt="Python"/>
                         <img className="featuredSkillIcon" src={require("../assets/images/SkillsImages/Node.png")} alt="Node"/>
                         <img className="featuredSkillIcon" src={require("../assets/images/SkillsImages/Git_icon.svg.png")} alt="Git"/>
@@ -50,7 +54,7 @@ const Skills = () => {
                         <img className="featuredSkillIcon" src={require("../assets/images/SkillsImages/LESS.svg")} alt="Less"/>
                         <img className="featuredSkillIcon" src={require("../assets/images/SkillsImages/Slack.png")} alt="Slack"/>
                     </div>
-                    </div>
+                    </FadeInSection>
                 </header>
             </article>
         </SkillsDiv>

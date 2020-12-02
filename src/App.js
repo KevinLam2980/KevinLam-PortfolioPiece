@@ -12,9 +12,9 @@ import Skills from './components/Skills'
 function App() {
   const history = useHistory()
 
-  // useEffect(() => {
-  //   history.push('/projects')
-  // }, [])
+  useEffect(() => {
+    history.push('/projects')
+  }, [])
 
   return (
 			<div id="container">

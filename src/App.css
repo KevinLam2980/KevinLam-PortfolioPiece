@@ -372,7 +372,7 @@ padding: 0 2rem;
 }
 
 #main > * {
-	padding: 4rem 4rem 2rem 4rem ;
+	padding: 4rem 4rem 2rem 4rem;
 	border-top: solid 2px #212931;
 	margin: 0;
 }
@@ -382,7 +382,8 @@ padding: 0 2rem;
 }
 
 #main > .post {
-	padding: 5rem 8rem 5rem 8rem ;
+	/* padding: 5rem 8rem 5rem 8rem; */
+	padding: 5rem;
 	border-left: 2px solid;
 }
 
