@@ -518,6 +518,15 @@ padding: 0 2rem;
 	display: none;
 }
 
+.githubButton {
+	margin-left: 1rem;
+}
+
+.githubIcon {
+	font-size: 1.25rem;
+}
+
+
 
 /* Media Queries */
 @media screen and (max-width: 420px) {
