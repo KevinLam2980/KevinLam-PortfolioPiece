@@ -227,7 +227,7 @@ header > p {
 }
 
 header.major {
-	margin: 0 0 4rem 0;
+	/* margin: 0 0 4rem 0; */
 	text-align: center;
 }
 
@@ -387,10 +387,16 @@ padding: 0 2rem;
 	border-left: 2px solid;
 }
 
+#main > .post header.major {
+	display: flex;
+	align-items: center;
+}
+
 #main > .post header.major h2 {
-	font-size: 3rem;
+	font-size: 2.5rem;
 	line-height: 1.1;
-	margin: 1.5rem 0 2rem 0;
+	/* margin: 1.5rem 0 2rem 0; */
+	margin: 0 auto;
 }
 
 #main > .posts {
@@ -411,6 +417,10 @@ padding: 0 2rem;
 	border-left: 2px solid #212931;
 	border-top: 2px solid #212931;
 	text-align: center;
+}
+
+.project-label {
+	align-self: center;
 }
 
 /* Contact page */
@@ -500,6 +510,14 @@ padding: 0 2rem;
 	text-shadow: 2px 2px black;
 }
 
+#socialMobile {
+	display: none;
+}
+
+#socialMobile a > *{
+	display: none;
+}
+
 
 /* Media Queries */
 @media screen and (max-width: 420px) {
@@ -513,23 +531,6 @@ body {
 	width: 100%;
 	overflow-x: hidden;
 }
-#nav {
-	width: 100%;
-	padding: 0;
-}
-#nav div {
-	display: none;
-	width: 0;
-}
-#nav ul {
-	width: 100%;
-	justify-content: space-around;
-}
-#nav li {
-	max-width: 33%;
-	margin: 0;
-	padding: 0 auto;
-}
 #main > article.post header.major h2 {
 	font-size: 1.75rem; 
 	width: 100%;
@@ -540,6 +541,47 @@ body {
 #main .posts img.image-fit {
 	width: 100%;
 }
+}
+
+@media screen and (max-width: 500px) {
+	#nav {
+		width: 100%;
+		padding: 0;
+	}
+	#nav ul {
+		width: 100%;
+		justify-content: space-around;
+	}
+	#nav li {
+		max-width: 33%;
+		margin: 0;
+		padding: 0 auto;
+	}
+#nav div {
+	display: none;
+	width: 0;
+}
+#socialMobile {
+	width: 75px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+#socialMobile a > *{
+	font-size: 1.75rem;
+	margin: 0;
+	padding: 0;
+	color: white;
+	display: inline-block;
+	margin-bottom: 0.25rem;
+}
+#intro p {
+	font-size: 1.2rem;
+	margin-top: 0rem;
+	margin-bottom: 0.25rem;
+	padding-bottom: 0;
+	}
+
 }
 
 @media screen and (max-width: 736px) {
@@ -578,7 +620,7 @@ body {
 }
 
 #intro {
-	padding: 3rem 2rem 1rem 2rem ;
+	padding: 3rem 2rem 64px 2rem ;
 	min-height: 90vh;
 }
 
@@ -589,21 +631,22 @@ body {
 	}
 
 	#intro p {
-	font-size: 1rem;
+	font-size: 1.2rem;
 	margin-top: 0rem;
-	padding-bottom: 2.5rem;
+	margin-bottom: 0.25rem;
+	padding-bottom: 1rem;
 	}
-
+/* 
 	#intro .actions {
 	display: none;
-	}
+	} */
 }
 
 @media screen and (max-width: 980px) {
 
-#contact {
-	display: block;
-}
+	#contact {
+		display: block;
+	}
 
 	#contact > section {
 	border-top: solid 2px #212931;
@@ -627,6 +670,9 @@ body {
 
 	#container {
 	background-size: cover;
+	}
+	#main > .post header.major {
+		display: block;
 	}
 }
 
