@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState} from 'react'
 import emailjs from 'emailjs-com'
 import Styled from 'styled-components'
 
@@ -42,12 +42,8 @@ const Contact = props => {
     const [emailError, setEmailError] = useState(false)
     const [emailFormValues, setEmailFormValues] = useState(initialFormValues)
 
-    // useEffect(() => {
-    //     document.getElementById("scrollerBTN").click()
-    //   }, [])
-
     function onHandleChange(e){
-        setEmailFormValues({... emailFormValues, [e.target.name]: e.target.value})
+        setEmailFormValues({...emailFormValues, [e.target.name]: e.target.value})
     }
 
     function sendEmail(e){
