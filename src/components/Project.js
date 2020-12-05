@@ -20,10 +20,10 @@ const Project = props => {
             </FadeInSection>
             <FadeInSection>
             {
-            city.projectLink != "" ? <a href={city.projectLink} target="_blank"  className="button" rel="noopener noreferrer">View Project</a> : null
+            city.projectLink !== "" ? <a href={city.projectLink} target="_blank"  className="button" rel="noopener noreferrer">View Project</a> : null
             }
             {
-            city.githubLink != "" ? <a href={city.githubLink} alt="Github repository link" className="button githubButton" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon className="githubIcon" icon={["fab", "github"]}/></a> : null
+            city.githubLink !== "" ? <a href={city.githubLink} alt="Github repository link" className="button githubButton" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon className="githubIcon" icon={["fab", "github"]}/></a> : null
             }
           </FadeInSection>
     </article> 

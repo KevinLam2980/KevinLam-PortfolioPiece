@@ -4,7 +4,7 @@ const listOfProjects = [
         title: "Citrics",
         img: 'citrics',
         description: "Full stack informational website used to compare different cities within the United States. Users can view data stats of cities such as; population, weather, prevalent career tracks, and more.",
-        projectLink: "",
+        projectLink: "https://main.d2rhibc2z6ms0a.amplifyapp.com",
         githubLink: "https://github.com/labs28-citrics-b"
     },
     {
@@ -18,10 +18,10 @@ const listOfProjects = [
     {
         date: "June 26, 2020",
         title: "Spotify Suggester",
-        img: 'spotify-suggester',
+        img: 'SpotifySuggester2',
         description: "A song suggester application built to give users recomended songs based on the sound profiles, melody, and rythm of your favorite songs.",
         projectLink: "https://spotify-suggester-melon.netlify.app/landing.html",
-        githubLink: ""
+        githubLink: "https://github.com/Build-Week-Spotify-2/front-end"
     },
     {
         date: "August 10, 2020",

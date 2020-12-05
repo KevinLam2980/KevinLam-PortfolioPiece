@@ -2,7 +2,6 @@ import React from 'react'
 import FadeInSection from './FadeInSection'
 import Skill from './Skill'
 import featuredSkillsRepo from '../assets/data/featuredSkillsRepo'
-import AdditionalSkillsRepo from '../assets/data/additionalSkillsRepo'
 import Styled from 'styled-components'
 import additionalSkillsRepo from '../assets/data/additionalSkillsRepo'
 
