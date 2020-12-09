@@ -11,7 +11,7 @@ const listOfProjects = [
         date: "July 24, 2020",
         title: "Secret Family Recipes",
         img: 'secret-recipe',
-        description: "React application with full CRUD capabilites, allowing users to add, edit, and delete their own cooking recipes.",
+        description: "React application with full CRUD capabilities, allowing users to add, edit, and delete their own cooking recipes.",
         projectLink: "https://bw-secret-family-recipe-frontend.vercel.app/",
         githubLink: "https://github.com/secret-family-recipes-703"
     },
