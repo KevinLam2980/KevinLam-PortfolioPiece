@@ -729,3 +729,24 @@ html {
 	background-color: radial-gradient(#ffc38c, #ff9b40);
 	z-index: 0;
 }
+
+article.project {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	/* height: 800px; */
+	box-sizing: border-box;
+	align-items: center;
+}
+
+/* article.project div.projectHeader {
+	height: 60%;
+} */
+
+/* article.project div.projectDescription {
+	height: 35%;
+} */
+
+article.project div.projectButtons {
+	height: 5%;
+}
