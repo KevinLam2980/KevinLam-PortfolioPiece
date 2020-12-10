@@ -21,7 +21,7 @@ const listOfProjects = [
         img: 'SpotifySuggester2',
         description: "A song suggester application built to give users recomended songs based on the sound profiles, melody, and rythm of your favorite songs.",
         // projectLink: "https://spotify-suggester-melon.netlify.app/landing.html",
-        projectLink: "https://spotify-suggester-pze7tvypd.vercel.app/",
+        projectLink: "https://spotify-suggester-rho.vercel.app",
         githubLink: "https://github.com/Build-Week-Spotify-2/front-end"
     },
     {
