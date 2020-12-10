@@ -513,14 +513,21 @@ padding: 0 2rem;
 	padding: 3rem;
 	width: 100%;
 	text-shadow: 2px 2px black;
+	z-index: 1;
+}
+
+#copyright p {
+	z-index: 1;
 }
 
 #socialMobile {
 	display: none;
+	z-index: 1;
 }
 
 #socialMobile a > *{
 	display: none;
+	z-index: 1;
 }
 
 .githubButton {
