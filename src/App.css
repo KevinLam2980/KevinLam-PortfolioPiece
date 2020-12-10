@@ -261,29 +261,34 @@ header.major > .date {
 }
 
 #intro h1, #intro h2 {
-color: white;
+	color: white;
+	z-index: 1;
 }
 
 #intro .button {
 	background-color: transparent;
 	box-shadow: inset 0 0 0 2px #ffffff;
 	color: #ffffff;
+	z-index: 1;
 }
 
 #intro .button:hover {
 	box-shadow: inset 0 0 0 2px #18bfef;
 	color: #18bfef;
+	z-index: 1;
 }
 
 #intro h1 {
 	font-size: 5rem;
+	z-index: 1;
 }
 
 #intro p {
 	font-size: 1.5rem;
 	font-style: italic;
-margin-top: -0.25rem;
-text-align: center;
+	margin-top: -0.25rem;
+	text-align: center;
+	z-index: 1;
 }
 
 /* NavBar */
@@ -712,3 +717,15 @@ html {
 	transform: none;
 	visibility: visible;
   }
+
+  #canvas1 {
+    position: fixed;
+    top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+    width: 100%;
+    height: 100%;
+	background-color: radial-gradient(#ffc38c, #ff9b40);
+	z-index: 0;
+}
