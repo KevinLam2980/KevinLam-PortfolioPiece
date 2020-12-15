@@ -263,6 +263,7 @@ header.major > .date {
 #intro h1, #intro h2 {
 	color: white;
 	z-index: 1;
+	text-shadow: 1px 1px 5px black;
 }
 
 #intro .button {
@@ -289,6 +290,10 @@ header.major > .date {
 	margin-top: -0.25rem;
 	text-align: center;
 	z-index: 1;
+	text-shadow: 1px 1px 5px black;
+	background-color:rgba(21, 41, 49, 0.7);
+	padding: 1rem;
+	border-radius: 15px;
 }
 
 /* NavBar */
@@ -562,6 +567,22 @@ body {
 #main .posts img.image-fit {
 	width: 100%;
 }
+#intro p {
+	font-size: 0.9rem;
+	margin: 0 0.5rem 0.5rem;
+	padding-bottom: 0;
+	line-height: 1.5;
+	background-color: rgba(21, 41, 49, 0.7);
+	padding: 1rem;
+	border-radius: 15px;
+	}
+#main > .posts > * {
+	padding: 2rem 0.25rem !important;
+	width: 100% !important;
+}
+#main > .posts p, #main > .posts h1, #main > .posts h2 {
+	padding: 0 1.5rem !important;
+}
 }
 
 @media screen and (max-width: 500px) {
@@ -597,12 +618,21 @@ body {
 	margin-bottom: 0.25rem;
 }
 #intro p {
-	font-size: 1.2rem;
-	margin-top: 0rem;
-	margin-bottom: 0.25rem;
+	font-size: 1rem;
+	margin: 0 0.5rem 0.5rem;
 	padding-bottom: 0;
-	}
-
+	line-height: 1.5;
+	background-color: rgba(21, 41, 49, 0.7);
+	padding: 1rem;
+	border-radius: 15px;
+}
+#main > .posts > * {
+	padding: 1rem;
+	width: 100% !important;
+}
+article.project {
+	padding: 0;
+}
 }
 
 @media screen and (max-width: 736px) {
@@ -645,18 +675,18 @@ body {
 	min-height: 90vh;
 }
 
-	#intro h1 {
-	font-size: 3.25rem;
-	line-height: 1.1;
-	margin-bottom: 1rem;
-	}
+#intro h1 {
+font-size: 3.25rem;
+line-height: 1.1;
+margin-bottom: 1rem;
+}
 
-	#intro p {
-	font-size: 1.2rem;
-	margin-top: 0rem;
-	margin-bottom: 0.25rem;
-	padding-bottom: 1rem;
-	}
+#intro p {
+font-size: 1.2rem;
+margin-top: 0rem;
+margin-bottom: 0.25rem;
+padding-bottom: 1rem;
+}
 /* 
 	#intro .actions {
 	display: none;
@@ -694,6 +724,15 @@ body {
 	}
 	#main > .post header.major {
 		display: block;
+	}
+	#intro p {
+		font-size: 1.3rem;
+		margin: 0 0.5rem 0.5rem;
+		padding-bottom: 0;
+		line-height: 1.5;
+		background-color: rgba(21, 41, 49, 0.7);
+		padding: 1rem;
+		border-radius: 15px;
 	}
 }
 
