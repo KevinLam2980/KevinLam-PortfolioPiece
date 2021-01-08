@@ -26,12 +26,12 @@ const listOfProjects = [
         githubLink: "https://github.com/Build-Week-Spotify-2/front-end"
     },
     {
-        date: "August 10, 2020",
-        title: "Reducer Todo",
-        img: 'reducer-todo',
-        description: "A simple and minimalistic todo application created with the use of react and reducer functions",
-        projectLink: "https://reducer-todo-8oft0equ5.vercel.app/",
-        githubLink: ""
+        date: "Jan 7, 2021",
+        title: "Movie Nominator",
+        img: 'shoppies',
+        description: "A front end react application that allows users to search up and select 5 of their favorite movies to nominate them for best movie of the year. Users can also look at movie information such as the plot, actors, writers, and more.",
+        projectLink: "https://shoppies-movie-app.vercel.app",
+        githubLink: "https://github.com/KevinLam2980/Shoppies"
     },
 ]
 
