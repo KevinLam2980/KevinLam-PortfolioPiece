@@ -3,7 +3,7 @@ const listOfProjects = [
         date: "September 2020",
         title: "Citrics",
         img: 'citrics',
-        description: "Full stack informational website used to compare different cities within the United States. Users can view data stats of cities such as; population, weather, prevalent career tracks, and more.",
+        description: "Full stack informational website used to compare different cities within the United States. Users can view data stats of cities such as; population, weather, cost of rent, and cost of homes",
         // projectLink: "https://main.d2rhibc2z6ms0a.amplifyapp.com",
         projectLink: "https://citycitrics.netlify.app/",
         githubLink: "https://github.com/labs28-citrics-b"
