@@ -16,7 +16,7 @@ const NavBar = props => {
                 <li>Projects</li>
             </NavHashLink>
             <NavHashLink smooth to='/skills#nav' activeClassName="active">
-                <li >Skills</li>
+                <li >About</li>
             </NavHashLink>
             {/* <NavHashLink smooth to='/about#nav' activeClassName="active">
                 <li >About Me</li>
