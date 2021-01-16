@@ -23,19 +23,29 @@ margin: 1.5rem;
 
 const Skills = () => {
 
-    return(
+    return (
         <SkillsDiv id="main">
+            <article className="post">
+                <header className="major">
+                    <h2 className="aboutMeHeader">About me</h2>
+                    <FadeInSection>
+                        <div className="aboutSection">
+                          <p>Welcome! My name is Kevin. I love building and desigining the look and functionality of web applications and will never get over the fact that such amazing things can be created with just a laptop and some will power. If you'd like to find out more about what I've been doing, please don't hesitate to contact me, as I will be looking forward from hearing from you.</p>
+                        </div>
+                    </FadeInSection>
+                </header>
+            </article>
             <article className="post">
                 <header className="major">
                     <h2 className="skillsHeaders">Featured Skills</h2>
                     <FadeInSection>
-                    <div className="featuredSkillsContainer">
-                        {
-                            featuredSkillsRepo.map(skill => {
-                                return <Skill skill={skill}/> 
-                            })
-                        }
-                    </div>
+                        <div className="featuredSkillsContainer">
+                            {
+                                featuredSkillsRepo.map(skill => {
+                                    return <Skill skill={skill} />
+                                })
+                            }
+                        </div>
                     </FadeInSection>
                 </header>
             </article>
@@ -43,13 +53,13 @@ const Skills = () => {
                 <header className="major">
                     <h2 className="skillsHeaders">Additional Skills</h2>
                     <FadeInSection>
-                    <div className="additionalSkillsContainer">
-                    {
-                            additionalSkillsRepo.map(skill => {
-                                return <Skill skill={skill}/> 
-                            })
-                        }
-                    </div>
+                        <div className="additionalSkillsContainer">
+                            {
+                                additionalSkillsRepo.map(skill => {
+                                    return <Skill skill={skill} />
+                                })
+                            }
+                        </div>
                     </FadeInSection>
                 </header>
             </article>
