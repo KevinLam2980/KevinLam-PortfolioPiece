@@ -796,3 +796,7 @@ article.project {
 article.project div.projectButtons {
 	height: 5%;
 }
+
+#main .post .aboutMe .aboutSection {
+  padding: 0 2rem;
+}

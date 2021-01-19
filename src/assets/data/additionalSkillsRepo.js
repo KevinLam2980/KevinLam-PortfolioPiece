@@ -6,12 +6,6 @@ const additionalSkillsRepo = [
         imgType: "png"
     },
     {
-        img: "Node",
-        alt: "Node logo",
-        label: "Node.js",
-        imgType: "png"
-    },
-    {
         img: "Git",
         alt: "Git logo",
         label: "Git",
@@ -30,12 +24,6 @@ const additionalSkillsRepo = [
         imgType: "svg"
     },
     {
-        img: "Postgresql_elephant",
-        alt: "PostgreSQL logo",
-        label: "PostgreSQL",
-        imgType: "svg"
-    },
-    {
         img: "VSCode",
         alt: "VS Code logo",
         label: "VS Code",
@@ -48,28 +36,10 @@ const additionalSkillsRepo = [
         imgType: "png"
     },
     {
-        img: "Bootstrap",
-        alt: "Bootstrap logo",
-        label: "Bootstrap",
-        imgType: "png"
-    },
-    {
         img: "Postman",
         alt: "Postman logo",
         label: "Postman",
         imgType: "png"
-    },
-    {
-        img: "Sass",
-        alt: "SASS logo",
-        label: "SASS",
-        imgType: "png"
-    },
-    {
-        img: "LESS",
-        alt: "LESS logo",
-        label: "LESS",
-        imgType: "svg"
     },
     {
         img: "Slack",

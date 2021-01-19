@@ -1,7 +1,7 @@
 import React from 'react'
 import FadeInSection from './FadeInSection'
 import Skill from './Skill'
-import featuredSkillsRepo from '../assets/data/featuredSkillsRepo'
+import {frontendSkills, backendSkills} from '../assets/data/featuredSkillsRepo'
 import Styled from 'styled-components'
 import additionalSkillsRepo from '../assets/data/additionalSkillsRepo'
 
@@ -26,11 +26,11 @@ const Skills = () => {
     return (
         <SkillsDiv id="main">
             <article className="post">
-                <header className="major">
+                <header className="major aboutMe">
                     <h2 className="aboutMeHeader">About me</h2>
                     <FadeInSection>
                         <div className="aboutSection">
-                          <p>Welcome! My name is Kevin. I love building and desigining the look and functionality of web applications and will never get over the fact that such amazing things can be created with just a laptop and some will power. If you'd like to find out more about what I've been doing, please don't hesitate to contact me, as I will be looking forward to hearing from you.</p>
+                          <p>Welcome! My name is Kevin, I am a full stack web developer. I love building and desigining the look and functionality of web applications and will never get over the fact that such amazing things can be created with just a laptop and some will power. When I'm not coding applications, I'm usually keeping up with tech trends, video editing, listening to music, or playing games. If you'd like to find out more about what I've been doing, please don't hesitate to contact me, as I will be looking forward to hearing from you.</p>
                         </div>
                     </FadeInSection>
                 </header>
@@ -41,7 +41,7 @@ const Skills = () => {
                     <FadeInSection>
                         <div className="featuredSkillsContainer">
                             {
-                                featuredSkillsRepo.map(skill => {
+                                frontendSkills.map(skill => {
                                     return <Skill skill={skill} />
                                 })
                             }
@@ -55,7 +55,7 @@ const Skills = () => {
                     <FadeInSection>
                         <div className="featuredSkillsContainer">
                             {
-                                featuredSkillsRepo.map(skill => {
+                                backendSkills.map(skill => {
                                     return <Skill skill={skill} />
                                 })
                             }
