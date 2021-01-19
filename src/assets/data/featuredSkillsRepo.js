@@ -18,6 +18,12 @@ export const frontendSkills = [
     imgType: "svg"
   },
   {
+    img: "typescript",
+    alt: "Typescript logo",
+    label: "Typescript",
+    imgType: "png"
+  },
+  {
     img: "react",
     alt: "React.JS logo",
     label: "React",
@@ -30,9 +36,21 @@ export const frontendSkills = [
     imgType: "png"
   },
   {
+    img: "vue",
+    alt: "Vue logo",
+    label: "Vue",
+    imgType: "png"
+  },
+  {
     img: "Bootstrap",
     alt: "Bootstrap logo",
     label: "Bootstrap",
+    imgType: "png"
+  },
+  {
+    img: "jquery",
+    alt: "jQuery logo",
+    label: "jQuery",
     imgType: "png"
   },
   {
@@ -73,6 +91,18 @@ export const backendSkills = [
     alt: "PostgreSQL logo",
     label: "PostgreSQL",
     imgType: "svg"
+  },
+  {
+    img: "firebase",
+    alt: "Firebase logo",
+    label: "Firebase",
+    imgType: "png"
+  },
+  {
+    img: "mongo",
+    alt: "MongoDB logo",
+    label: "MongoDB",
+    imgType: "png"
   },
 
 ]
