@@ -239,7 +239,7 @@ header.major > .date {
 /* Container */
 #container {
 	background-color: #212931;
-	background-image: url("./assets/images/background3.jpeg");
+	background-image: url("./assets/images/background3-min.jpeg");
 	background-size: auto, auto, 100% auto;
 	background-position: center, center, top center;
 	background-repeat:no-repeat;
