@@ -4,6 +4,7 @@ import Styled from "styled-components";
 import * as yup from "yup";
 import newContact from "../Validation/newContact";
 import ReactQuill from "react-quill";
+import {useNotification} from './Notifications/NotificationsProvider'
 
 const SuccessMessage = Styled.p`
     /* transition: 0.4s ease-in-out;
@@ -41,11 +42,11 @@ let initialFormValues = {
 };
 
 const Contact = (props) => {
-  const [sent, setSent] = useState(false);
-  const [emailError, setEmailError] = useState(false);
   const [emailFormValues, setEmailFormValues] = useState(initialFormValues);
   const [emailFormErrors, setEmailFormErrors] = useState(initialFormValues);
   const [formDisabled, setFormDisabled] = useState(true);
+
+  const dispatchNotification = useNotification()
 
   const formats = [
     'header',
@@ -86,7 +87,7 @@ const Contact = (props) => {
     });
   }
 
-    function contentChangeHandle(content) {
+    function messageChangeHandle(content) {
       yup
       .reach(newContact, "message")
       .validate(content.replace(/<[^>]*>/g, ''))
@@ -126,6 +127,10 @@ const Contact = (props) => {
       )
       .then(
         (res) => {
+            dispatchNotification({
+                type: 'SUCCESS',
+                message: `Email sent successfully. Thank you for reaching out!`
+            })  
           console.log(res.text);
           setSent(true);
           setTimeout(() => {
@@ -134,7 +139,15 @@ const Contact = (props) => {
           }, 6000);
         },
         (err) => {
-          console.log(err.text);
+            dispatchNotification({
+                type: 'ERROR',
+                message: `Failure: ${err.text}`
+            })  
+            dispatchNotification({
+                type: 'ERROR',
+                message: `Please try again, or reach out to me directly with my email.`
+            })  
+          console.error(err.text);
           setEmailError(true);
           setTimeout(() => {
             setEmailError(false);
@@ -143,21 +156,16 @@ const Contact = (props) => {
       );
   }
 
+  const testbanner = () => {
+    dispatchNotification({
+        type: 'SUCCESS',
+        message: `Email sent successfully. Thank you for reaching out, I will get back to you as soon as possible!`
+    }) 
+  }
+
   return (
     <div id="contact">
       <section>
-        {sent ? (
-          <SuccessMessage>
-            Your email was sent! Thank you for reaching out, I will get back to
-            you as soon as I can.
-          </SuccessMessage>
-        ) : null}
-        {emailError ? (
-          <FailMessage>
-            Error! A problem occured while trying to send your email! Please try
-            again.
-          </FailMessage>
-        ) : null}
         <form onSubmit={sendEmail}>
           <div class="fields">
             <div class="field">
@@ -194,7 +202,7 @@ const Contact = (props) => {
               <ReactQuill
                 theme="snow"
                 value={emailFormValues.message}
-                onChange={contentChangeHandle}
+                onChange={messageChangeHandle}
                 modules={modules}
                 formats={formats} 
                 placeholder="Type your message here."
@@ -241,6 +249,7 @@ const Contact = (props) => {
           </ul>
         </section>
       </section>
+      <button onClick={testbanner}>click</button>
     </div>
   );
 };

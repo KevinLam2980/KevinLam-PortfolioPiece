@@ -1759,3 +1759,91 @@ article.project div.projectButtons {
 	border: 2px solid #212931;
   }
   
+
+  /* Notification Banner Styles */
+
+  .notification-wrapper {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+	width: 300px;
+	z-index: 9999 !important;
+}
+
+@media (max-width: 800px) {
+	.notification-wrapper {
+		width: 250px;
+	}
+	.notification-item {
+		font-size: 0.9rem;
+		width: 250px !important;
+	}
+}
+@media (max-width: 500px) {
+	.notification-item {
+		font-size: 0.85rem;
+		width: 200px !important;
+	}
+	.notification-wrapper {
+		width: 200px;
+	}
+}
+
+.notification-item {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.425);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    animation: SlideLeft 0.4s;
+    animation-fill-mode: forwards;
+	width: 300px;
+	background-color: black;
+	color: white;
+	line-height: normal;
+}
+
+@keyframes SlideLeft {
+    0% {
+        margin-left: 120%;
+    }
+
+    100% {
+        margin-left: 0;
+    }
+}
+
+@keyframes SlideRight {
+    0% {
+        margin-left: 0;
+    }
+
+    100% {
+        margin-left: 120%;
+    }
+}
+
+.notification-item.exit {
+    animation: SlideRight 0.4s;
+    animation-fill-mode: forwards;
+}
+
+.notification-item p {
+    margin: 0;
+    padding: 10px;
+}
+
+.notification-item .bar {
+    height: 10px;
+}
+
+.notification-item.success .bar {
+    background-color: #65d266;
+}
+
+.notification-item.error .bar {
+    background-color: red;
+}
+
+.notification-item.info .bar {
+    background-color: rgb(16, 62, 212);
+}
