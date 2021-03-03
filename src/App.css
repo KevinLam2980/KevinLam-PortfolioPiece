@@ -463,6 +463,7 @@ padding: 0 2rem;
 #contact input,
 #contact textarea {
 	border-color: #212931;
+	color: #212931;
 }
 
 #contact input:focus,
@@ -853,6 +854,7 @@ article.project div.projectButtons {
 	text-align: left;
 	white-space: pre-wrap;
 	word-wrap: break-word;
+	color: #212931;
   }
   .ql-editor > * {
 	cursor: text;
