@@ -1,6 +1,9 @@
-import React, {useState} from 'react'
+import React, { useState, useEffect } from 'react'
 import emailjs from 'emailjs-com'
 import Styled from 'styled-components'
+import * as yup from 'yup'
+import newContact from '../Validation/newContact'
+import { faTruckMonster } from '@fortawesome/free-solid-svg-icons'
 
 const SuccessMessage = Styled.p`
     /* transition: 0.4s ease-in-out;
@@ -41,10 +44,37 @@ const Contact = props => {
     const [sent, setSent] = useState(false)
     const [emailError, setEmailError] = useState(false)
     const [emailFormValues, setEmailFormValues] = useState(initialFormValues)
+    const [emailFormErrors, setEmailFormErrors] = useState(initialFormValues)
+    const [formDisabled, setFormDisabled] = useState(true)
 
     function onHandleChange(e){
-        setEmailFormValues({...emailFormValues, [e.target.name]: e.target.value})
+        const {name, value} = e.target
+        yup
+        .reach(newContact, name)
+        .validate(value)
+        .then(valid => {
+            setEmailFormErrors({
+                ...setEmailFormErrors,
+                [name]: "",
+            })
+        })
+        .catch(err => {
+            setEmailFormErrors({
+                ...emailFormErrors,
+                [name]: err.errors[0],
+            })
+        })
+        setEmailFormValues({
+            ...emailFormValues, 
+            [name]: value
+        })
     }
+
+    useEffect(() => {
+        newContact.isValid(emailFormValues).then(valid => {
+            setFormDisabled(!valid)
+        })
+    })
 
     function sendEmail(e){
         e.preventDefault()
@@ -75,6 +105,9 @@ const Contact = props => {
                 <div class="fields">
                     <div class="field">
                         <label htmlFor="name">Name</label>
+                        <div id="nameError" className="validationMessage">
+                            {emailFormErrors.name}
+                        </div>
                         <input 
                         type="text" 
                         name="name" 
@@ -84,6 +117,9 @@ const Contact = props => {
                     </div>
                     <div class="field">
                         <label htmlFor="email">Email</label>
+                        <div id="emailError" className="validationMessage">
+                            {emailFormErrors.email}
+                        </div>
                         <input 
                         type="email" 
                         name="email" 
@@ -93,6 +129,9 @@ const Contact = props => {
                     </div>
                     <div class="field">
                         <label htmlFor="message">Message</label>
+                        <div id="messageError" className="validationMessage">
+                            {emailFormErrors.message}
+                        </div>
                         <textarea 
                         name="message" 
                         id="message" 
@@ -106,7 +145,7 @@ const Contact = props => {
                     className="button"
                     type="submit" 
                     value="Send"
-                    disabled={emailFormValues.email.length < 1 || emailFormValues.name.length < 1 || emailFormValues.message.length < 1 ? "disabled" : null }
+                    disabled={formDisabled}
                      />
             </form>
         </section>
