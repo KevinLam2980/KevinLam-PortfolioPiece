@@ -196,6 +196,12 @@ textarea {
 	padding: 0.75rem 1rem;
 }
 
+input:disabled, input:disabled:hover {
+	background-color: #717981;
+	color:#909498
+}
+
+
 /* Images */
 .image-fit {
 	border: 0;

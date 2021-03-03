@@ -85,7 +85,7 @@ const Contact = props => {
                     <div class="field">
                         <label htmlFor="email">Email</label>
                         <input 
-                        type="text" 
+                        type="email" 
                         name="email" 
                         id="email" 
                         onChange={onHandleChange} 
@@ -105,7 +105,9 @@ const Contact = props => {
                     <input 
                     className="button"
                     type="submit" 
-                    value="Send" />
+                    value="Send"
+                    disabled={emailFormValues.email.length < 1 || emailFormValues.name.length < 1 || emailFormValues.message.length < 1 ? "disabled" : null }
+                     />
             </form>
         </section>
 
