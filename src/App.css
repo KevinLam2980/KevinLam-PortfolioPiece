@@ -1797,7 +1797,7 @@ article.project div.projectButtons {
     animation: SlideLeft 0.4s;
     animation-fill-mode: forwards;
 	width: 300px;
-	background-color: black;
+	background-color: #212931;
 	color: white;
 	line-height: normal;
 }

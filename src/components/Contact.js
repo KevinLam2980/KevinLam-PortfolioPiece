@@ -132,11 +132,6 @@ const Contact = (props) => {
                 message: `Email sent successfully. Thank you for reaching out!`
             })  
           console.log(res.text);
-          setSent(true);
-          setTimeout(() => {
-            setSent(false);
-            setEmailFormValues(initialFormValues);
-          }, 6000);
         },
         (err) => {
             dispatchNotification({
@@ -148,10 +143,6 @@ const Contact = (props) => {
                 message: `Please try again, or reach out to me directly with my email.`
             })  
           console.error(err.text);
-          setEmailError(true);
-          setTimeout(() => {
-            setEmailError(false);
-          }, 5000);
         }
       );
   }
@@ -159,7 +150,7 @@ const Contact = (props) => {
   const testbanner = () => {
     dispatchNotification({
         type: 'SUCCESS',
-        message: `Email sent successfully. Thank you for reaching out, I will get back to you as soon as possible!`
+        message: `${Math.random()}`
     }) 
   }
 
