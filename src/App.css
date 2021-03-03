@@ -460,7 +460,7 @@ padding: 0 2rem;
 	color: #18bfef;
 }
 
-#contact input,
+#contact input[text],
 #contact textarea {
 	border-color: #212931;
 	color: #212931;
