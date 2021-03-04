@@ -240,7 +240,6 @@ const Contact = (props) => {
           </ul>
         </section>
       </section>
-      <button onClick={testbanner}>click</button>
     </div>
   );
 };

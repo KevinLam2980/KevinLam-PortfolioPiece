@@ -555,7 +555,9 @@ padding: 0 2rem;
 
 /* Media Queries */
 @media screen and (max-width: 420px) {
-
+	#nav li {
+		font-size: 0.65rem !important;
+	}
 html {
 	font-size: 0.8rem;
 	width: 100%;
@@ -606,6 +608,7 @@ body {
 		max-width: 33%;
 		margin: 0;
 		padding: 0 auto;
+		font-size: 0.75rem;
 	}
 #nav div {
 	display: none;
@@ -635,11 +638,18 @@ body {
 	border-radius: 15px;
 }
 #main > .posts > * {
-	padding: 1rem;
+	padding: 1rem !important;
 	width: 100%;
+}
+
+#main > .posts {
+	padding: 0 0 !important;
 }
 article.project {
 	padding: 0;
+}
+article.post {
+	padding: 1rem !important;
 }
 }
 
