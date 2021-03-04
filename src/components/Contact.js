@@ -5,6 +5,8 @@ import * as yup from "yup";
 import newContact from "../Validation/newContact";
 import ReactQuill from "react-quill";
 import {useNotification} from './Notifications/NotificationsProvider'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { f1fa } from '@fortawesome/free-solid-svg-icons'
 
 const SuccessMessage = Styled.p`
     /* transition: 0.4s ease-in-out;
@@ -216,25 +218,27 @@ const Contact = (props) => {
       </section>
 
       <section class="split contact">
-        <section>
+        {/* <section>
           <h3>Phone</h3>
           <p className="contactInfo">(408) 532-3643</p>
-        </section>
+        </section> */}
         <section>
+        <h3>Phone</h3>
+          <p className="contactInfo"><FontAwesomeIcon icon={['fas', 'mobile-alt']}/> (408) 532-3643</p>
           <h3>Email</h3>
-          <p className="contactInfo">kev2980@gmail.com</p>
+          <p className="contactInfo"><FontAwesomeIcon icon={['fas', 'at']}/> kev2980@gmail.com</p>
         </section>
         <section>
-          <h3>Social</h3>
+          <h3>Socials</h3>
           <ul class="icons alt">
             <li>
-              <a href="https://www.linkedin.com/in/kevin-lam-8729281a3/">
-                <span class="label">Linkedin</span>
+              <a href="https://www.linkedin.com/in/kevin-lam-8729281a3/" alt="Linkedin profile link" target="_blank" rel="noopener noreferrer">
+                <span class="label"><FontAwesomeIcon icon={["fab", "linkedin"]}/> Linkedin</span>
               </a>
             </li>
             <li>
-              <a href="https://github.com/KevinLam2980">
-                <span class="label">GitHub</span>
+              <a href="https://github.com/KevinLam2980" alt="Github profile link" target="_blank" rel="noopener noreferrer">
+                <span class="label"><FontAwesomeIcon icon={["fab", "github"]}/> GitHub</span>
               </a>
             </li>
           </ul>

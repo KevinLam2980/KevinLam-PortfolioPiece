@@ -500,7 +500,7 @@ padding: 0 2rem;
 }
 
 #contact > section.split.contact > section {
-	display: flex;
+	/* display: flex; */
 	align-items: center;
 	padding: 3rem 4rem;
 }
@@ -672,6 +672,10 @@ article.post {
 	width: 100% !important;
 }
 
+#main > .post {
+	padding: 2rem 0 !important;
+}
+
 #main > .posts > article:nth-child(n) {
 	border-left-width: 0;
 }
@@ -705,10 +709,7 @@ margin-top: 0rem;
 margin-bottom: 0.25rem;
 padding-bottom: 1rem;
 }
-/* 
-	#intro .actions {
-	display: none;
-	} */
+
 }
 
 @media screen and (max-width: 980px) {
