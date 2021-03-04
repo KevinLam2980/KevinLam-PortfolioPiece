@@ -405,15 +405,15 @@ padding: 0 2rem;
 }
 
 #main > .post header.major {
-	display: flex;
+	display: block;
 	align-items: center;
 }
 
 #main > .post header.major h2 {
-	font-size: 2.5rem;
+	font-size: 2rem;
 	line-height: 1.1;
 	/* margin: 1.5rem 0 2rem 0; */
-	margin: 0 auto;
+	/* margin: 0 auto; */
 }
 
 #main > .posts {
@@ -585,7 +585,7 @@ body {
 	border-radius: 15px;
 	}
 #main > .posts > * {
-	padding: 2rem 0.25rem;
+	padding: 1rem 0.25rem !important;
 	width: 100%;
 }
 #main > .posts p, #main > .posts h1, #main > .posts h2 {
@@ -659,7 +659,7 @@ article.project {
 
 #main > .posts > * {
 	padding: 2rem;
-	width: 100%;
+	width: 100% !important;
 }
 
 #main > .posts > article:nth-child(n) {
@@ -809,7 +809,14 @@ article.project div.projectButtons {
   padding: 0 2rem;
 }
 
+strong#aboutIntro {
+	font-size: larger;
+	font-weight: bold;
+}
 
+.aboutSection p {
+	text-indent: 2rem;
+}
 
 /*!
  * Quill Editor v1.3.7
