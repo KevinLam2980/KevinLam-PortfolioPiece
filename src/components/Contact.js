@@ -1,41 +1,10 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import emailjs from "emailjs-com";
-import Styled from "styled-components";
 import * as yup from "yup";
 import newContact from "../Validation/newContact";
 import ReactQuill from "react-quill";
 import { useNotification } from "./Notifications/NotificationsProvider";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { f1fa } from "@fortawesome/free-solid-svg-icons";
-
-const SuccessMessage = Styled.p`
-    /* transition: 0.4s ease-in-out;
-    transform: scaleY(1); */
-    margin: 0 auto 1rem auto;
-    width: 85%;
-    text-align: center;
-    color: #212931;
-    background-color: #23ba3a;
-    padding: 0.75rem;
-    z-index: 5;
-    position: absolute;
-    top: 0;
-    box-shadow: 0px 1px 10px black;
-`;
-
-const FailMessage = Styled.p`
-    transition: 0.4s ease-in-out;
-    margin: 0 auto 1rem auto;
-    width: 85%;
-    text-align: center;
-    color: #212931;
-    background-color: #a31010;
-    padding: 0.75rem;
-    z-index: 5;
-    position: absolute;
-    top: 0;
-    box-shadow: 0px 1px 10px black;
-`;
 
 let initialFormValues = {
   name: "",
@@ -229,10 +198,6 @@ const Contact = (props) => {
       </section>
 
       <section class="split contact">
-        {/* <section>
-          <h3>Phone</h3>
-          <p className="contactInfo">(408) 532-3643</p>
-        </section> */}
         <section>
           <h3>Phone</h3>
           <p className="contactInfo">
