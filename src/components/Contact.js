@@ -4,9 +4,9 @@ import Styled from "styled-components";
 import * as yup from "yup";
 import newContact from "../Validation/newContact";
 import ReactQuill from "react-quill";
-import {useNotification} from './Notifications/NotificationsProvider'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { f1fa } from '@fortawesome/free-solid-svg-icons'
+import { useNotification } from "./Notifications/NotificationsProvider";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { f1fa } from "@fortawesome/free-solid-svg-icons";
 
 const SuccessMessage = Styled.p`
     /* transition: 0.4s ease-in-out;
@@ -48,23 +48,34 @@ const Contact = (props) => {
   const [emailFormErrors, setEmailFormErrors] = useState(initialFormValues);
   const [formDisabled, setFormDisabled] = useState(true);
 
-  const dispatchNotification = useNotification()
+  const dispatchNotification = useNotification();
 
   const formats = [
-    'header',
-    'bold', 'italic', 'underline', 'strike', 'blockquote',
-    'list', 'bullet', 'indent',
-    'link'
-  ]
+    "header",
+    "bold",
+    "italic",
+    "underline",
+    "strike",
+    "blockquote",
+    "list",
+    "bullet",
+    "indent",
+    "link",
+  ];
   const modules = {
     toolbar: [
-      [{ 'header': [1, 2, 3, 4, 5, 6, false] }],
-      ['bold', 'italic', 'underline','strike', 'blockquote'],
-      [{'list': 'ordered'}, {'list': 'bullet'}, {'indent': '-1'}, {'indent': '+1'}],
-      ['link'],
-      ['clean']
+      [{ header: [1, 2, 3, 4, 5, 6, false] }],
+      ["bold", "italic", "underline", "strike", "blockquote"],
+      [
+        { list: "ordered" },
+        { list: "bullet" },
+        { indent: "-1" },
+        { indent: "+1" },
+      ],
+      ["link"],
+      ["clean"],
     ],
-  }
+  };
 
   function onHandleChange(e) {
     const { name, value } = e.target;
@@ -89,10 +100,10 @@ const Contact = (props) => {
     });
   }
 
-    function messageChangeHandle(content) {
-      yup
+  function messageChangeHandle(content) {
+    yup
       .reach(newContact, "message")
-      .validate(content.replace(/<[^>]*>/g, ''))
+      .validate(content.replace(/<[^>]*>/g, ""))
       .then((valid) => {
         setEmailFormErrors({
           ...emailFormErrors,
@@ -109,7 +120,7 @@ const Contact = (props) => {
       ...emailFormValues,
       message: content.toString(),
     });
-    }
+  }
 
   useEffect(() => {
     newContact.isValid(emailFormValues).then((valid) => {
@@ -129,21 +140,21 @@ const Contact = (props) => {
       )
       .then(
         (res) => {
-            dispatchNotification({
-                type: 'SUCCESS',
-                message: `Email sent successfully. Thank you for reaching out!`
-            })  
+          dispatchNotification({
+            type: "SUCCESS",
+            message: `Email sent successfully. Thank you for reaching out!`,
+          });
           console.log(res.text);
         },
         (err) => {
-            dispatchNotification({
-                type: 'ERROR',
-                message: `Failure: ${err.text}`
-            })  
-            dispatchNotification({
-                type: 'ERROR',
-                message: `Please try again, or reach out to me directly with my email.`
-            })  
+          dispatchNotification({
+            type: "ERROR",
+            message: `Failure: ${err.text}`,
+          });
+          dispatchNotification({
+            type: "ERROR",
+            message: `Please try again, or reach out to me directly with my email.`,
+          });
           console.error(err.text);
         }
       );
@@ -151,10 +162,10 @@ const Contact = (props) => {
 
   const testbanner = () => {
     dispatchNotification({
-        type: 'SUCCESS',
-        message: `${Math.random()}`
-    }) 
-  }
+      type: "SUCCESS",
+      message: `${Math.random()}`,
+    });
+  };
 
   return (
     <div id="contact">
@@ -197,15 +208,15 @@ const Contact = (props) => {
                 value={emailFormValues.message}
                 onChange={messageChangeHandle}
                 modules={modules}
-                formats={formats} 
+                formats={formats}
                 placeholder="Type your message here."
               />
-              <textarea 
-                style={{ display: 'none' }}
+              <textarea
+                style={{ display: "none" }}
                 name="message"
-                id="message" 
+                id="message"
                 value={emailFormValues.message}
-                ></textarea>
+              ></textarea>
             </div>
           </div>
           <input
@@ -223,22 +234,51 @@ const Contact = (props) => {
           <p className="contactInfo">(408) 532-3643</p>
         </section> */}
         <section>
-        <h3>Phone</h3>
-          <p className="contactInfo"><FontAwesomeIcon icon={['fas', 'mobile-alt']}/> (408) 532-3643</p>
+          <h3>Phone</h3>
+          <p className="contactInfo">
+            <FontAwesomeIcon icon={["fas", "mobile-alt"]} /> (408) 532-3643
+          </p>
           <h3>Email</h3>
-          <p className="contactInfo"><FontAwesomeIcon icon={['fas', 'at']}/> kev2980@gmail.com</p>
+          <p className="contactInfo">
+            <FontAwesomeIcon icon={["fas", "at"]} /> kev2980@gmail.com
+          </p>
+          <h3>Resume</h3>
+          <a
+            href="https://drive.google.com/file/d/1PFUVDt5NcNk9Sh2d96UhqqPa1QMStjv8/view?usp=sharing"
+            alt="Resume google drive PDF link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span class="label">
+              <FontAwesomeIcon icon={["fas", "file"]} /> Resume
+            </span>
+          </a>
         </section>
         <section>
           <h3>Socials</h3>
           <ul class="icons alt">
             <li>
-              <a href="https://www.linkedin.com/in/kevin-lam-8729281a3/" alt="Linkedin profile link" target="_blank" rel="noopener noreferrer">
-                <span class="label"><FontAwesomeIcon icon={["fab", "linkedin"]}/> Linkedin</span>
+              <a
+                href="https://www.linkedin.com/in/kevin-lam-8729281a3/"
+                alt="Linkedin profile link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span class="label">
+                  <FontAwesomeIcon icon={["fab", "linkedin"]} /> Linkedin
+                </span>
               </a>
             </li>
             <li>
-              <a href="https://github.com/KevinLam2980" alt="Github profile link" target="_blank" rel="noopener noreferrer">
-                <span class="label"><FontAwesomeIcon icon={["fab", "github"]}/> GitHub</span>
+              <a
+                href="https://github.com/KevinLam2980"
+                alt="Github profile link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span class="label">
+                  <FontAwesomeIcon icon={["fab", "github"]} /> GitHub
+                </span>
               </a>
             </li>
           </ul>
