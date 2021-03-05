@@ -236,11 +236,16 @@ const Contact = (props) => {
         <section>
           <h3>Phone</h3>
           <p className="contactInfo">
-            <a href="tel:4085323643"><FontAwesomeIcon icon={["fas", "mobile-alt"]} /> (408) 532-3643</a>
+            <a href="tel:4085323643" alt="phone number">
+              <FontAwesomeIcon icon={["fas", "mobile-alt"]} /> (408) 532-3643
+            </a>
           </p>
           <h3>Email</h3>
           <p className="contactInfo">
-           <a href="mailto:kev2980@gmail.com"> <FontAwesomeIcon icon={["fas", "at"]} /> kev2980@gmail.com</a>
+            <a href="mailto:kev2980@gmail.com" alt="email address">
+              {" "}
+              <FontAwesomeIcon icon={["fas", "at"]} /> kev2980@gmail.com
+            </a>
           </p>
           <h3>Resume</h3>
           <a
