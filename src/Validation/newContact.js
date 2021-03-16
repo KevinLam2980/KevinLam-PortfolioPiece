@@ -3,7 +3,7 @@ import * as yup from 'yup'
 const formSchema = yup.object().shape({
     name: yup
         .string()
-        .min(3, "Name must be atleast 2 characters"),
+        .min(2, "Name must be atleast 2 characters"),
     email: yup
         .string().email("Email must be in proper email format: 'example@email.com'"),
     message: yup
